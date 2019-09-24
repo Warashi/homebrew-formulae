@@ -1,4 +1,4 @@
-class EmacsInlinePatched < Formula
+class EmacsInlinepatched < Formula
   desc "takaxp's patch is applied emacs"
   homepage "https://www.gnu.org/software/emacs/"
   url "http://ftpmirror.gnu.org/emacs/emacs-26.3.tar.gz"
