@@ -1,9 +1,9 @@
-class EmacsImepatched < Formula
+class EmacsInlinePatched < Formula
   desc "takaxp's patch is applied emacs"
   homepage "https://www.gnu.org/software/emacs/"
-  url "http://ftpmirror.gnu.org/emacs/emacs-26.2.tar.gz"
-  version "26.2-1"
-  sha256 "4f99e52a38a737556932cc57479e85c305a37a8038aaceb5156625caf102b4eb"
+  url "http://ftpmirror.gnu.org/emacs/emacs-26.3.tar.gz"
+  version "26.3-1"
+  sha256 "09c747e048137c99ed35747b012910b704e0974dde4db6696fde7054ce387591"
 
   depends_on "autoconf" => :build
   depends_on "gnu-sed" => :build
