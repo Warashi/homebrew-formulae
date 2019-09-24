@@ -6,4 +6,4 @@ $ brew tap Warashi/formulae
 ```
 
 There is one formula.
-- emacs-imepatched
+- emacs-inlinepatched
