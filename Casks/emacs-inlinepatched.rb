@@ -1,6 +1,6 @@
 cask 'emacs-inlinepatched' do
   name 'emacs-inlinepatched'
-  version 'emacs-26.3-inlinepatched'
+  version 'emacs-26.3-inlinepatched-5'
   homepage 'https://github.com/Warashi/emacs-inlinepatched'
   appcast 'https://github.com/Warashi/emacs-inlinepatched/releases.atom'
 
@@ -9,8 +9,8 @@ cask 'emacs-inlinepatched' do
   if MacOS.version != :mojave
     raise Exception.new('this cask provided only for mojave')
   end
-  url 'https://github.com/Warashi/emacs-inlinepatched/releases/download/v26.3-2/Emacs-26.3-macos-10.14.dmg'
-  sha256 '661b0e4849b90008fd413b4b11b5c20fca4a8ece220c0eecd8a2bf769057ab7b'
+  url 'https://github.com/Warashi/emacs-inlinepatched/releases/download/v26.3-5/Emacs-26.3-macOS-10.14.dmg'
+  sha256 'cafdf276714b582b283c8a09dec9738d03c091277f8e9445705aa46ee59633eb'
 
   app 'Emacs.app'
   binary "#{appdir}/Emacs.app/Contents/MacOS/Emacs.sh", target: 'emacs'
