@@ -1,16 +1,13 @@
 cask 'emacs-inlinepatched' do
   name 'emacs-inlinepatched'
-  version 'emacs-26.3-inlinepatched-5'
+  version 'emacs-26.3-inlinepatched-8'
   homepage 'https://github.com/Warashi/emacs-inlinepatched'
   appcast 'https://github.com/Warashi/emacs-inlinepatched/releases.atom'
 
   conflicts_with(formula: 'emacs', cask: ['emacs', 'emacs-mac', 'emacs-mac-spacemacs-icon'])
 
-  if MacOS.version != :mojave
-    raise Exception.new('this cask provided only for mojave')
-  end
-  url 'https://github.com/Warashi/emacs-inlinepatched/releases/download/v26.3-5/Emacs-26.3-macOS-10.14.dmg'
-  sha256 'cafdf276714b582b283c8a09dec9738d03c091277f8e9445705aa46ee59633eb'
+  url 'https://github.com/Warashi/emacs-inlinepatched/releases/download/v26.3-8/Emacs-26.3-macOS-latest.dmg'
+  sha256 '9c42e2d653beb5d9c0d4cfbd4fabb693f209f7c444128371421c550c8210c611'
 
   app 'Emacs.app'
   binary "#{appdir}/Emacs.app/Contents/MacOS/Emacs.sh", target: 'emacs'
