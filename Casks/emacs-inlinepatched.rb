@@ -6,6 +6,8 @@ cask 'emacs-inlinepatched' do
 
   conflicts_with(formula: 'emacs', cask: ['emacs', 'emacs-mac', 'emacs-mac-spacemacs-icon'])
 
+  depends_on macos: :catalina
+
   url 'https://github.com/Warashi/emacs-inlinepatched/releases/download/v26.3-8/Emacs-26.3-macOS-latest.dmg'
   sha256 '9c42e2d653beb5d9c0d4cfbd4fabb693f209f7c444128371421c550c8210c611'
 
